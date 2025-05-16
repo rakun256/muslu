@@ -27,12 +27,9 @@ export default function HeroSection() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Overlay */}
       <div className="absolute inset-0 bg-[rgba(28,43,89,0.5)] backdrop-blur-sm z-0" />
 
-      {/* İçerik */}
       <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Yazı ve CTA */}
         <div>
           <h1 className="text-3xl sm:text-6xl font-extrabold mb-3 leading-tight">
             MUSTAFA USLU
@@ -62,7 +59,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Stat Kartları */}
         <div className="flex flex-col sm:flex-row lg:flex-col gap-6 items-start lg:items-end">
           {[
             {
