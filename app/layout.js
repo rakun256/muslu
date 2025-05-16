@@ -46,7 +46,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="tr" className={inter.variable}>
-      <body className="antialiased bg-[var(--color-background)] text-[var(--color-text)] font-sans">
+      <body className="antialiased bg-[var(--color-primary)] text-[var(--color-text)] font-sans" style={{ backgroundColor: "var(--color-primary)" }}>
         {children}
       </body>
     </html>

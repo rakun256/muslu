@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import logo from "../assets/muslu-icon.png";
@@ -31,10 +30,10 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "backdrop-blur-md bg-[rgba(28,43,89,0.8)]" : "bg-transparent"
+        scrolled ? "backdrop-blur-md bg-transparent" : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-8 sm:py-6 py-4 flex justify-between items-center">
+      <div className="mx-auto px-6 sm:px-32 py-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <Image
             src={logo}
@@ -43,12 +42,12 @@ export default function Header() {
             height={32}
             draggable={false}
           />
-          <span className="text-white font-semibold tracking-wide">
+          <span className="text-white font-semibold tracking-wide text-xl">
             MUSTAFA USLU
           </span>
         </div>
 
-        <nav className="hidden md:flex gap-8 text-sm text-white ">
+        <nav className="hidden md:flex gap-8 text-white text-lg">
           <button
             onClick={() => scrollToSection("hero")}
             className="hover:text-[var(--color-accent)] transition-colors duration-200 cursor-pointer"
@@ -83,7 +82,7 @@ export default function Header() {
         </button>
 
         <div
-          className={`fixed top-0 right-0 w-64 h-full bg-[rgba(28,43,89,0.9)] backdrop-blur-md shadow-lg transition-transform duration-300 transform ${
+          className={`fixed top-0 right-0 w-64 h-screen overflow-y-auto bg-[rgba(15,24,48,0.8)] backdrop-blur-md shadow-lg transition-transform duration-300 transform ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           } md:hidden z-40`}
         >
