@@ -33,7 +33,7 @@ export default function Header() {
         scrolled ? "backdrop-blur-md bg-transparent" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto px-6 sm:px-32 py-6 flex justify-between items-center">
+      <div className="mx-auto px-8 lg:px-32 py-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <Image
             src={logo}
